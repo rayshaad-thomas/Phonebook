@@ -1,6 +1,6 @@
 package phonebookproject;
 /**
- * @author rtho137
+ * @author rayshaadthomas
  */
 public class Business extends Contact 
 {
