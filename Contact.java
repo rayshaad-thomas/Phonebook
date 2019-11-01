@@ -2,21 +2,32 @@ package phonebookproject;
 /**
  * @author rayshaadthomas
  */
-public class Contact implements Comparable<Contact>
+// This class is for the base of any contact in the phonebook (only the name and 
+// phone number)
+public class Contact implements Comparable <Contact>
 {
-    public String name;
-    public long phone;
-    public Contact(String name, long phone)
+    // Initializing the variables for a contact. Each contact will have at least
+    // a name and phone number.
+    private String name;
+    private long phone;
+    // Constructor class. Initializes the object of a class, in this case it is a
+    // contact
+    public Contact (String name, long phone)
     {
+        // this._____ calls the private variable outside of the constructor, 
+        // and sets it equal to the variables inside the constructor.
         this.name = name;
         this.phone = phone;
     }
-    public String getInfo()
+    // The method returns the contact's info
+    public String getInfo () 
     {
-        return String.format("%-20s %-20d", name, phone);
-    } 
-    public int compareTo(Contact other)
+        return String.format("%-20s %-20d ", name, phone);
+    }
+    // The method compares the strings in alphabetical order
+    @Override
+    public int compareTo (Contact otherContact)
     {
-        return name.compareTo(other.name);
+        return name.compareTo(otherContact.name);
     }
 }
