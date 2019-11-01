@@ -1,22 +1,11 @@
-/*
- * Rayshaad Thomas
- * 892564854
- * Lab Section 1
- * Lab Assignment 5
- * Submission time: 6:36
- */
 package phonebookproject;
-
 /**
- *
- * @author rtho137
+ * @author rayshaadthomas
  */
-public class PhonebookProject {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+public class PhonebookProject 
+{
+    public static void main(String[] args) 
+    {
         Phonebook myPhoneBook = new Phonebook();
         
         myPhoneBook.addBusiness("WalMart", 22566647, 70809);
@@ -29,5 +18,4 @@ public class PhonebookProject {
         
         myPhoneBook.printContacts();
     }
-    
 }
